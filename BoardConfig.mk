@@ -24,6 +24,11 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # VNDK
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# Wi-Fi
+BOARD_WLAN_DEVICE := bcmdhd
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+
 # Inherit from mt8163-common
 include device/amazon/mt8163-common/BoardConfigCommon.mk
 

@@ -9,6 +9,13 @@ $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-hea
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml
 
+# Kernel Modules
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
+
+PRODUCT_PACKAGES += \
+    amzn-bcmdhd
+
 # Screen
 TARGET_SCREEN_DENSITY := 160
 TARGET_SCREEN_HEIGHT := 480
@@ -23,6 +30,16 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vendor partition
 TARGET_HAS_VENDOR_PARTITION := false
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service-lazy \
+    wpa_supplicant.conf \
+    libwifi-hal
+
+PRODUCT_COPY_FILES += \
+    hardware/broadcom/wlan/bcmdhd/config/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
+    hardware/broadcom/wlan/bcmdhd/config/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf
 
 # Inherit from mt8163-common
 $(call inherit-product, device/amazon/mt8163-common/mt8163.mk)
