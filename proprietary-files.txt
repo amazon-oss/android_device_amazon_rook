@@ -3,6 +3,9 @@
 # Audio - from onn/ONA19TB003/ONA19TB003:9/PPR1.180610.011/1570788406:user/release-keys
 vendor/lib/hw/audio.primary.mt8163.so|5e56f34fa9fe6adf718dde7576238b21601446ae|2d9db3adf5540e733b4b9ea0e721bee8f39d81c5
 
+# Bluetooth
+system/vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd:vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd
+
 # Wi-Fi
 system/vendor/firmware/brcm/bcm43569a2-firmware.bin:vendor/firmware/bcm43569a2-firmware.bin
 system/vendor/firmware/brcm/bcm43569a2.nvm:vendor/firmware/bcm43569a2.nvm

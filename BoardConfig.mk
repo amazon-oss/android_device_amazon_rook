@@ -5,8 +5,17 @@
 
 DEVICE_PATH := device/amazon/rook
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/configs/vnd_rook.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := rook
+
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_rook.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := rook_defconfig
