@@ -29,6 +29,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     amzn-bcmdhd
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayRook \
+    SystemUIOverlayRook
+
 # Screen
 TARGET_SCREEN_DENSITY := 160
 TARGET_SCREEN_HEIGHT := 480
