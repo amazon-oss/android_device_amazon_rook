@@ -3,6 +3,15 @@
 # Bluetooth
 system/vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd:vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd
 
+# NVRAM
+bin/nvram_daemon:vendor/bin/nvram_daemon
+lib/libcustom_nvram.so:vendor/lib/libcustom_nvram.so
+lib/libfile_op.so:vendor/lib/libfile_op.so
+lib/libnvram.so:vendor/lib/libnvram.so
+lib/libnvram_daemon_callback.so:vendor/lib/libnvram_daemon_callback.so
+lib/libnvram_platform.so:vendor/lib/libnvram_platform.so
+lib/libnvramagentclient.so:vendor/lib/libnvramagentclient.so
+
 # Wi-Fi
 system/vendor/firmware/brcm/bcm43569a2-firmware.bin:vendor/firmware/bcm43569a2-firmware.bin
 system/vendor/firmware/brcm/bcm43569a2.nvm:vendor/firmware/bcm43569a2.nvm

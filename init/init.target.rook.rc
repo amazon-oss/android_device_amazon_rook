@@ -19,6 +19,11 @@ on post-fs-data
     chown system system /sys/class/misc/m_alsps_misc/psbatch
     chown system system /sys/class/misc/m_alsps_misc/psflush
 
+    # create basic filesystem structure
+    mkdir /data/nvram 0771 root system
+    mkdir /data/nvram/media 0771 media audio
+    copy /vendor/etc/fstab.mt8163 /data/nvram/fstab.mt8163
+
 on boot
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
@@ -34,3 +39,9 @@ service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-servi
     group system wakelock uhid context_hub input
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+service nvram_daemon /vendor/bin/nvram_daemon
+    class main
+    user root
+    group system audio net_bt
+    oneshot
