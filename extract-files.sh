@@ -8,10 +8,34 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib*/libnvram_daemon_callback.so)
+        vendor/lib*/hw/audio.primary_amazon.mt8163.so)
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            "${PATCHELF}" --add-needed "libcompiler_rt.so" "${2}"
+            "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        lib/libasp.so|\
+        lib/libaspclient.so)
+            "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
+            ;;
+        vendor/lib/libaudiocomponentengine.so)
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            "${PATCHELF}" --add-needed "libutilscallstack.so" "${2}"
+            ;;
+        vendor/lib/libaudiocustparam.so)
             "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
             ;;
-        vendor/lib*/libnvramagentclient.so)
+        vendor/lib/libaudiostream.so)
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
+            "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        vendor/lib/libaudiostream_jni.so)
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib/libnvram_daemon_callback.so)
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib/libnvramagentclient.so)
             "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"
             ;;
     esac

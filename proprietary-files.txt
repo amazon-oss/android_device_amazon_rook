@@ -1,5 +1,50 @@
 # Unpinned blobs from Amazon/rook/rook:5.1.1/LVY48F/304.6.4.7_user_647591020:user/release-keys
 
+# Audio
+lib/libasp.so
+lib/libaspclient.so
+lib/libsmartvolume.so
+lib/hw/audio.primary.mt8163.so:vendor/lib/hw/audio.primary_amazon.mt8163.so
+lib/libaudiocompensationfilter.so:vendor/lib/libaudiocompensationfilter.so
+lib/libaudiocomponentengine.so:vendor/lib/libaudiocomponentengine.so
+lib/libaudiocustparam.so:vendor/lib/libaudiocustparam.so
+lib/libaudiodcrflt.so:vendor/lib/libaudiodcrflt.so
+lib/libaudiosetting.so:vendor/lib/libaudiosetting.so
+lib/libaudiostream_jni.so:vendor/lib/libaudiostream_jni.so
+lib/libaudiostream.so:vendor/lib/libaudiostream.so
+lib/libbessound_hd_mtk.so:vendor/lib/libbessound_hd_mtk.so
+lib/libblisrc.so:vendor/lib/libblisrc.so
+lib/libblisrc32.so:vendor/lib/libblisrc32.so
+lib/libcvsd_mtk.so:vendor/lib/libcvsd_mtk.so
+lib/libmsbc_mtk.so:vendor/lib/libmsbc_mtk.so
+lib/libmtklimiter.so:vendor/lib/libmtklimiter.so
+lib/libmtkplayer.so:vendor/lib/libmtkplayer.so
+lib/libmtkshifter.so:vendor/lib/libmtkshifter.so
+lib/libsmartvolume.so:vendor/lib/libsmartvolume.so
+lib/libspeech_enh_lib.so:vendor/lib/libspeech_enh_lib.so
+
+# Audio (Configs)
+etc/audio_device.xml
+vendor/etc/audio-algorithms/AFE.cfg
+vendor/etc/audio-algorithms/coefs_FBF.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_160.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_640.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1024.cfg
+vendor/etc/audio-algorithms/coefs_FilterBank_AnalysisSynthesis_1280.cfg
+vendor/etc/audio-algorithms/EQ.cfg
+vendor/etc/audio-algorithms/MBCL_1.5W_Audio.cfg
+vendor/etc/audio-algorithms/MBCL_1.5W.cfg
+vendor/etc/audio-algorithms/MBCL_1.5W_Video.cfg
+vendor/etc/audio-algorithms/MBCL_1W_Audio.cfg
+vendor/etc/audio-algorithms/MBCL_1W_Video.cfg
+vendor/etc/audio-algorithms/MBCL_2W_Audio.cfg
+vendor/etc/audio-algorithms/MBCL_2W.cfg
+vendor/etc/audio-algorithms/MBCL_2W_Video.cfg
+vendor/etc/audio-algorithms/MBCL_VOIP.cfg
+vendor/etc/audio-algorithms/UserEQ.cfg
+vendor/etc/audio-algorithms/VOIPRxParametricEQ.cfg
+vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
+
 # Bluetooth
 system/vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd:vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd
 
