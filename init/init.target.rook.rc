@@ -45,3 +45,22 @@ service nvram_daemon /vendor/bin/nvram_daemon
     user root
     group system audio net_bt
     oneshot
+
+service rpmb_svc /vendor/bin/rpmb_svc_disabled
+    override
+    class late_start
+    group system drmrpc
+    disabled
+
+service securetime /vendor/bin/securetime_disabled
+    override
+    class main
+    user media
+    group mediadrm drmrpc
+    disabled
+
+service kisd /vendor/bin/kisd_disabled
+    override
+    user root
+    group system drmrpc
+    disabled
