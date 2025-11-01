@@ -59,7 +59,7 @@ TARGET_SCREEN_WIDTH := 480
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.echo
+    sensors.amazon
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 22

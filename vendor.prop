@@ -2,4 +2,4 @@
 ro.hardware.audio.primary=amazon_wrapper
 
 # Sensors
-ro.hardware.sensors=echo
+ro.hardware.sensors=amazon
