@@ -48,6 +48,12 @@ PRODUCT_PACKAGES += \
     amzn-bcmdhd
 
 # Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/packages/apps/Bluetooth
+
 PRODUCT_PACKAGES += \
     FrameworksResOverlayRook \
     SystemUIOverlayRook

@@ -1,5 +1,8 @@
 # Audio
 ro.hardware.audio.primary=amazon_wrapper
 
+# Bluetooth
+persist.bluetooth.enablenewavrcp=false
+
 # Sensors
 ro.hardware.sensors=amazon
