@@ -48,6 +48,12 @@ vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
 # Bluetooth
 system/vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd:vendor/firmware/BCM43569A2_001.003.004.0142.0191.hcd
 
+# Camera (tuning)
+lib/libcameracustom.so:vendor/lib/libcameracustom_rook.so|d93ffe3ddeeefaa656ac52887dcb0e63018a5640|5712290bd959499e5184388d4d00ce42abbbae11
+
+# Camera (tuning logic) - from checkers
+-system/vendor/lib/libcameracustom.so:vendor/lib/libcameracustom_n.so|6cf014899b5bcdf53b8373920207741c70f4ea2a|066f7c97af590f60cb9cd70c56279077eae527d0
+
 # NVRAM
 bin/nvram_daemon:vendor/bin/nvram_daemon
 lib/libcustom_nvram.so:vendor/lib/libcustom_nvram.so

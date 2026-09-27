@@ -4,5 +4,7 @@
 //
 
 soong_namespace {
-
+    imports: [
+        "vendor/amazon/rook",
+    ],
 }

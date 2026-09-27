@@ -13,6 +13,13 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libcompiler_rt.so" "${2}"
             "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
             ;;
+        vendor/lib/libcameracustom_n.so)
+            "${PATCHELF}" --set-soname "libcameracustom_n.so" "${2}"
+            ;;
+        vendor/lib/libcameracustom_rook.so)
+            "${PATCHELF}" --set-soname "libcameracustom_rook.so" "${2}"
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            ;;
         lib/libasp.so|\
         lib/libaspclient.so)
             "${PATCHELF}" --add-needed "libbinder_shim.so" "${2}"

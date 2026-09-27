@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    libcameracustom
+
 # Init scripts
 PRODUCT_PACKAGES += \
     init.target.rook.rc
