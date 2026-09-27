@@ -23,6 +23,8 @@
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">40.0px</dimen>
 
+    <integer name="quick_qs_panel_max_columns">4</integer>
+
     <!-- Adjust the icon padding in status bar for rounded corners. -->
     <dimen name="rounded_corner_content_padding">95.0px</dimen>
 </resources>

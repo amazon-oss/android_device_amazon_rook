@@ -60,6 +60,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     FrameworksResOverlayRook \
+    LatinIMEOverlayRook \
+    SetupWizardOverlayRook \
     SystemUIOverlayRook
 
 # Screen

@@ -24,4 +24,9 @@
 
     <!-- Height of the bottom navigation / system bar. -->
     <dimen name="navigation_bar_height">60px</dimen>
+
+    <!-- Keep list items clear of the round edges. -->
+    <dimen name="list_item_padding_horizontal_material">56dp</dimen>
+    <dimen name="list_item_padding_start_material">56dp</dimen>
+    <dimen name="list_item_padding_end_material">56dp</dimen>
 </resources>
