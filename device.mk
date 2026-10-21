@@ -44,6 +44,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.target.rook.rc
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc/)
+
 # Kernel Modules
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
